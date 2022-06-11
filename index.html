@@ -14,36 +14,91 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 </head>
- <style>
-.masthead {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-    </style>
+<style>
+    .masthead {
+        height: 100vh;
+        min-height: 500px;
+        /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080'); */
+        background-image: url('http://drive.google.com/uc?export=view&id=1nL-eF6fC3vyW_jzbJCdglnTbOaQ4Xptb');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* position: relative; */
+    }
+
+    /* .masthead::after {
+        content: '';
+        position: absolute;
+        background-image: url(http://drive.google.com/uc?export=view&id=1L3p4pWnO4lDjLP5rZojYHWm_-30KyEZB);
+        width: 400px;
+        height: 300px;
+        background-repeat: no-repeat;
+        bottom: 10%;
+        animation: rebel500 5s infinite;
+        animation-timing-function: ease-out;
+        background-size: 100%;
+    } */
+    .rebel-outside {
+        width: 100%;
+        max-width: 1200px;
+        height: 500px;
+        position: absolute;
+        bottom: 6%;
+    }
+
+    .rebel::after {
+        content: '';
+        position: absolute;
+        background-image: url(http://drive.google.com/uc?export=view&id=1L3p4pWnO4lDjLP5rZojYHWm_-30KyEZB);
+        width: 400px;
+        height: 300px;
+        background-repeat: no-repeat;
+        bottom: 10%;
+        animation: rebel500 6s infinite;
+        background-size: 100%;
+    }
+
+    @keyframes rebel500 {
+        0% {
+            left: 0%;
+        }
+
+        20% {
+            left: 30%;
+            bottom: 15%;
+        }
+
+        40% {
+            left: 50%;
+            bottom: 4%;
+        }
+
+        80% {
+            left: 80%;
+            bottom: 23%;
+        }
+
+        100% {
+            left: 120%;
+            bottom: 17%;
+        }
+    }
+</style>
+
 <body>
     <header class="masthead">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <h1 class="fw-light">Vertically Centered Masthead Content</h1>
-        <p class="lead">A great starter layout for a landing page</p>
-      </div>
-    </div>
-  </div>
-</header>
-    <div class="container">
-        <div class="row">
-          <div class="col">
-              <div style="width: 400px;">
-                <img src="http://drive.google.com/uc?export=view&id=1L3p4pWnO4lDjLP5rZojYHWm_-30KyEZB" class="img-fluid" alt="rebel">
-                <img src="http://drive.google.com/uc?export=view&id=1rO15vvBBgqOdr9MbrbuIhJdPZVPmqw1a" class="img-fluid" alt="rebel_2">
-              </div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <!-- <h1 class="fw-light">Vertically Centered Masthead Content</h1>
+                    <p class="lead">A great starter layout for a landing page</p> -->
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="rebel-outside">
+            <div class="rebel"></div>
+        </div>
+    </header>
 </body>
 
 </html>
